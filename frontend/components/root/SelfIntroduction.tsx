@@ -90,7 +90,12 @@ const SelfIntroduction = () => {
     <div>
       <Heading label="自己紹介" />
       <div className="flex flex-col sm:flex-row items-center gap-4 w-11/12 md:w-3/4 lg:w-3/5 xl:w-1/2 mx-auto">
-        <Image src="/root/avatar.png" width={300} height={300} alt="avatar" className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] mx-auto" />
+        <div>
+          <Image src="/root/id_photo.jpg" width={300} height={400} alt="avatar" className="w-[210px] h-[280px] md:w-[240px] md:h-[320px] lg:w-[262.5px] lg:h-[350px] xl:w-[300px] xl:h-[400px] mx-auto rounded-full border border-slate-900" />
+          <div className="text-center text-sm text-gray-500">
+            ぼかし処理をしています。
+          </div>
+        </div>
         <div className="min-w-[360px] max-w-[1000px] mx-auto md:w-[calc(100%-300px)]">
           <List
             sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}

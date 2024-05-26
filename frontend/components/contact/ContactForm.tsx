@@ -119,7 +119,7 @@ const ContactForm = () => {
             {errors.content && <FormHelperText id="component-error-text">この項目は必須です。</FormHelperText>}
           </FormControl>
           <div className="mx-auto">
-            <Button type="submit" variant="contained" disabled={!isValid || submitting} endIcon={<SendIcon />} className="bg-slate-900 hover:bg-slate-900">
+            <Button type="submit" variant="outlined" disabled={!isValid || submitting} endIcon={<SendIcon />} className="text-black border-slate-900 hover:border-slate-900">
               送信
             </Button>
           </div>
