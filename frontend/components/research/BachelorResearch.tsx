@@ -73,7 +73,7 @@ const BachelorResearch = () => {
             で、情報教育に関する研究をしています。
           </Typography>
           <Typography className="w-11/12 md:w-3/4 mx-auto">
-            高等学校必履修科目情報Iの「コミュニケーションと情報デザイン」の分野では、マークアップ言語HTMLとスタイルシート言語CSSを用いたWebコンテンツ制作実習が想定されます。
+            高等学校必履修科目「情報I」の「コミュニケーションと情報デザイン」の分野では、マークアップ言語HTMLとスタイルシート言語CSSを用いたWebコンテンツ制作実習が想定されます。
             ですが、初学者にとってはHTMLとCSSの仕様は膨大であり、習得には時間がかかります。
             十分な学習時間を確保できない初学者にとっては、HTMLとCSSの記法の理解に加え、良いデザインのものを作るのは容易ではありません。
             そこで、ピクトグラムに着目して、短時間で楽しいWebコンテンツ制作実習を可能にするアプリケーションを開発しようと考えました。
@@ -81,24 +81,34 @@ const BachelorResearch = () => {
           <Typography className="w-11/12 md:w-3/4 mx-auto">
             そのアプリケーションが
             <Link href="https://pictogramming.org/apps/pictagramming" target="_blank" className="text-blue-500 break-words whitespace-normal">
-              ピクタグラミング（https://pictogramming.org/apps/pictagramming）
+              ピクタグラミング
             </Link>
-            です。ピクタグラミングという名称は、ピクトグラムとタグを組み合わせた造語です。<br />
+            です。
+            ピクタグラミングは、ピクトグラムの作成を通じて、マークアップ言語とスタイルシート言語の記法について学習できるアプリケーションです。
+            ピクタグラミングという名称は、ピクトグラムと（マークアップ言語の）タグを組み合わせた造語です。
+            インターネット上で公開しており、どなたでも利用可能です。
           </Typography>
           <Link href="https://pictogramming.org/apps/pictagramming/?code=%3Cdiv%20id%3D%22wrapper%22%3E%0A%20%20%3Ch1%3ECAUTION%3C%2Fh1%3E%0A%0A%20%20%3Cpa%20type%3D%22a%22%20scale%3D%220.7%22%3E%0A%20%20%20%20%3Chp%20x%3D%2220%22%20y%3D%2230%22%20scale%3D%220.6%22%20body%3D%2260%22%20lua%3D%22-120%22%20lla%3D%2245%22%20rua%3D%2245%22%20rla%3D%2290%22%20lul%3D%2220%22%20lll%3D%22-60%22%20rul%3D%2245%22%20rll%3D%22-60%22%20color%3D%22%23222325%22%20orientation%3D%22front%22%3E%3C%2Fhp%3E%0A%20%20%20%20%3Cline%20x1%3D%22-160%22%20y1%3D%22150%22%20x2%3D%2280%22%20y2%3D%22150%22%20width%3D%2220%22%20color%3D%22%23222325%22%3E%3C%2Fline%3E%0A%20%20%20%20%3Cline%20x1%3D%2280%22%20y1%3D%22140%22%20x2%3D%2280%22%20y2%3D%22210%22%20width%3D%2220%22%20color%3D%22%23222325%22%3E%3C%2Fline%3E%0A%20%20%20%20%3Cline%20x1%3D%2280%22%20y1%3D%22200%22%20x2%3D%22160%22%20y2%3D%22200%22%20width%3D%2220%22%20color%3D%22%23222325%22%3E%3C%2Fline%3E%0A%20%20%3C%2Fpa%3E%0A%0A%20%20%3Cdiv%20class%3D%22message%22%3E%0A%20%20%20%20%3Cdiv%3EWatch%20your%20step!%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%3E%E3%81%8A%E8%B6%B3%E5%85%83%E3%81%AB%E3%81%8A%E6%B0%97%E3%82%92%E3%81%A4%E3%81%91%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cstyle%3E%0Adiv%23wrapper%20%7B%0A%20%20text-align%3A%20center%3B%0A%20%20background-color%3A%20rgb(236%2C%20199%2C%200%2C%200.9)%3B%0A%7D%0Ah1%20%7B%0A%20%20margin%3A%200%20auto%20-10px%3B%0A%20%20background-color%3A%20rgb(34%2C%2035%2C%2037)%3B%0A%20%20color%3A%20rgb(236%2C%20199%2C%200%2C%200.9)%3B%0A%20%20font-size%3A%2062px%3B%0A%7D%0Adiv.message%20%7B%0A%20%20margin-top%3A%20-20px%3B%0A%20%20font-size%3A%2038px%3B%0A%20%20font-weight%3A%20bold%3B%0A%7D%0Adiv.message%20div%3Afirst-child%20%7B%0A%20%20font-size%3A%2048px%3B%0A%7D%0A%3C%2Fstyle%3E&workName=Watch%20your%20step!" target="_blank" className="w-3/4 lg:w-3/5 mx-auto my-4">
             <Image src="/research/pictagramming.png" width={1200} height={300} alt="Pictagramming" className="border border-slate-900" />
           </Link>
           <Typography className="w-11/12 md:w-3/4 mx-auto">
-            ピクタグラミングでは、HPML（Human Pictogram Markup Language）という独自のマークアップ言語を定義しております。
+            ピクタグラミングでは、HPML（Human Pictogram Markup Language）という独自のマークアップ言語を定義しています。
             HPMLを使用することで、ピクトグラムを容易に、短時間で作成することが可能です。
+            HPMLの詳細は、ピクタグラミングの
+            <Link href="https://pictogramming.org/materials/learning_pictagramming.pdf" target="_blank" className="text-blue-500 break-words whitespace-normal">
+              テキスト
+            </Link>
+            からご覧いただけます。
           </Typography>
           <Typography className="w-11/12 md:w-3/4 mx-auto">
-            ピクタグラミングの
-            <Link href="https://pictogramming.org/materials/learning_pictagramming.pdf" className="text-blue-500 break-words whitespace-normal">
-              テキスト（https://pictogramming.org/materials/learning_pictagramming.pdf）
-            </Link>
-            も作成しました。
-            ピクタグラミングのユーザビリティにはまだまだ改善の余地がありますが、どのようにしたらユーザにとって使いやすいアプリケーションになるか考えることができました。
+            授業実践も2回実施しており、ユーザビリティを改善する必要があるとわかりましたが、「楽しい」といったお声を多くいただきました。
+            授業実践で頂いた意見を元に、どのようにしたらユーザにとって楽しく、使いやすいアプリケーションになるか考え、改善してきました。
+          </Typography>
+          <Typography className="w-11/12 md:w-3/4 mx-auto">
+            ユーザのWeb制作の学習のモチベーションが向上したり、授業を楽しんでもらうことを目標に研究をしてきました。
+            大袈裟な気もしますが、この研究を通じて社会貢献について考えることができ、自分も社会に貢献することができると実感しました。
+            情報教育に関する研究をしていたことで、将来はエンジニアとして教育に関するシステム開発に携わりたいと思うようにもなりました。
+            そのため、今後はエンジニアとして社会に貢献していきたいと考えています。
           </Typography>
         </div>
         <div>
