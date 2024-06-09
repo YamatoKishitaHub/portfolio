@@ -4,7 +4,7 @@ import { CSSProperties, useEffect, useState } from "react";
 import Link from "next/link";
 
 import { useLocalStorage } from "@uidotdev/usehooks";
-import ClipLoader from "react-spinners/ClipLoader";
+import BarLoader from "react-spinners/BarLoader";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
@@ -23,7 +23,6 @@ type NewsType = {
 const override: CSSProperties = {
   display: "block",
   margin: "0 auto",
-  borderColor: "slate",
 };
 
 const News = () => {
@@ -51,16 +50,22 @@ const News = () => {
   }, []);
 
   return (
-    loading ? (
-      <ClipLoader
-        loading={loading}
-        cssOverride={override}
-        size={100}
-        aria-label="Loading Spinner"
-      />
-    ) : (
-      <div>
-        <Heading label="お知らせ" />
+    <div>
+      <Heading label="お知らせ" />
+      {loading ? (
+        <div>
+          <BarLoader
+            width={200}
+            color="#36d7b7"
+            loading={loading}
+            cssOverride={override}
+            aria-label="Loading Spinner"
+          />
+          <p className="text-center">
+            Loading...
+          </p>
+        </div>
+      ) : (
         <div className="w-11/12 md:w-3/4 lg:w-3/5 xl:w-1/2 mx-auto">
           <List sx={{ width: "100%", bgcolor: "background.paper" }} className="flex flex-col gap-2">
             {newsItems.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).map((newsItem) => (
@@ -102,8 +107,8 @@ const News = () => {
             ))}
           </List>
         </div>
-      </div>
-    )
+      )}
+    </div>
   );
 };
 
