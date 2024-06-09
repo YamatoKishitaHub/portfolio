@@ -18,6 +18,7 @@ import { MdOutlineWork } from "react-icons/md";
 import { MdComputer } from "react-icons/md";
 import { MdAccountCircle } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
+import { Typography } from "@mui/material";
 
 import Heading from "../ui/Heading";
 import Icon from "../ui/Icon";
@@ -89,51 +90,56 @@ const SelfIntroduction = () => {
   return (
     <div>
       <Heading label="自己紹介" />
-      <div className="flex flex-col sm:flex-row items-center gap-4 w-11/12 md:w-3/4 lg:w-3/5 xl:w-1/2 mx-auto">
-        <div>
-          <Image src="/root/id_photo.jpg" width={300} height={400} alt="avatar" className="w-[210px] h-[280px] md:w-[240px] md:h-[320px] lg:w-[262.5px] lg:h-[350px] xl:w-[300px] xl:h-[400px] mx-auto rounded-full border border-slate-900" />
-          <div className="text-center text-sm text-gray-500">
-            ぼかし処理をしています。
+      <div className="flex flex-col gap-4 w-11/12 md:w-3/4 lg:w-3/5 xl:w-1/2 mx-auto">
+        <div className="flex flex-col sm:flex-row items-center gap-4">
+          <div>
+            <Image src="/root/id_photo.jpg" width={300} height={400} alt="avatar" className="w-[210px] h-[280px] md:w-[240px] md:h-[320px] lg:w-[262.5px] lg:h-[350px] xl:w-[300px] xl:h-[400px] mx-auto rounded-full border border-slate-900" />
+            <div className="text-center text-sm text-gray-500">
+              ぼかし処理をしています。
+            </div>
+          </div>
+          <div className="min-w-[360px] max-w-[1000px] mx-auto md:w-[calc(100%-300px)]">
+            <List
+              sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+              component="nav"
+              aria-labelledby="nested-list-subheader"
+              subheader={
+                <ListSubheader component="div" id="nested-list-subheader">
+                  基本情報
+                </ListSubheader>
+              }
+            >
+              {selfIntroductionItems.map((selfIntroductionItem, index: number) => (
+                <div key={selfIntroductionItem.label}>
+                  <ListItemButton onClick={() => selfIntroductionItem.children && handleClickListItem(index)} style={selfIntroductionItem.children ? {} : { cursor: "default" }}>
+                    <ListItemIcon>
+                      <Icon icon={selfIntroductionItem.icon} />
+                    </ListItemIcon>
+                    <ListItemText primary={selfIntroductionItem.label} />
+                    {selfIntroductionItem.children && (selfIntroductionItem.open ? <ExpandLess /> : <ExpandMore />)}
+                  </ListItemButton>
+                  {selfIntroductionItem.children && (
+                    selfIntroductionItem.children.map((selfIntroductionItemChild, index: number) => (
+                      <Collapse in={selfIntroductionItem.open} timeout="auto" unmountOnExit key={index}>
+                        <List component="div" disablePadding>
+                          <ListItemButton sx={{ pl: 4 }} style={{ cursor: "default" }}>
+                            <ListItemIcon>
+                              <Icon icon={selfIntroductionItemChild.icon} />
+                            </ListItemIcon>
+                            <ListItemText primary={selfIntroductionItemChild.label} />
+                          </ListItemButton>
+                        </List>
+                      </Collapse>
+                    ))
+                  )}
+                </div>
+              ))}
+            </List>
           </div>
         </div>
-        <div className="min-w-[360px] max-w-[1000px] mx-auto md:w-[calc(100%-300px)]">
-          <List
-            sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
-            component="nav"
-            aria-labelledby="nested-list-subheader"
-            subheader={
-              <ListSubheader component="div" id="nested-list-subheader">
-                基本情報
-              </ListSubheader>
-            }
-          >
-            {selfIntroductionItems.map((selfIntroductionItem, index: number) => (
-              <div key={selfIntroductionItem.label}>
-                <ListItemButton onClick={() => selfIntroductionItem.children && handleClickListItem(index)} style={selfIntroductionItem.children ? {} : { cursor: "default" }}>
-                  <ListItemIcon>
-                    <Icon icon={selfIntroductionItem.icon} />
-                  </ListItemIcon>
-                  <ListItemText primary={selfIntroductionItem.label} />
-                  {selfIntroductionItem.children && (selfIntroductionItem.open ? <ExpandLess /> : <ExpandMore />)}
-                </ListItemButton>
-                {selfIntroductionItem.children && (
-                  selfIntroductionItem.children.map((selfIntroductionItemChild, index: number) => (
-                    <Collapse in={selfIntroductionItem.open} timeout="auto" unmountOnExit key={index}>
-                      <List component="div" disablePadding>
-                        <ListItemButton sx={{ pl: 4 }} style={{ cursor: "default" }}>
-                          <ListItemIcon>
-                            <Icon icon={selfIntroductionItemChild.icon} />
-                          </ListItemIcon>
-                          <ListItemText primary={selfIntroductionItemChild.label} />
-                        </ListItemButton>
-                      </List>
-                    </Collapse>
-                  ))
-                )}
-              </div>
-            ))}
-          </List>
-        </div>
+        <Typography>
+          ポートフォリオにお越しいただき、誠にありがとうございます。木下 倭（きした やまと）と申します。<br />大学生活や研究、スキルについてまとめていますので、ぜひご覧ください。
+        </Typography>
       </div>
     </div>
   );
