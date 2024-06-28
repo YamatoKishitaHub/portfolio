@@ -59,6 +59,37 @@ const BachelorResearch = () => {
     },
   ];
 
+  const presentationAndPosterTimelineItems: TimelineItemType[] = [
+    {
+      date: "2023.09",
+      title: "2023年度情報処理学会関西支部支部大会 プレゼンターション資料",
+      titleHref: "/research/ipsj_kansaishibu2023_presentation.pdf",
+      icon: <RiNewspaperFill />,
+      iconColor: "primary",
+    },
+    {
+      date: "2024.03",
+      title: "第16回データ工学と情報マネジメントに関するフォーラム DEIM2024 プレゼンターション資料",
+      titleHref: "/research/deim2024_presentation.pdf",
+      icon: <RiNewspaperFill />,
+      iconColor: "primary",
+    },
+    {
+      date: "2024.03",
+      title: "第16回データ工学と情報マネジメントに関するフォーラム DEIM2024 ポスター",
+      titleHref: "/research/deim2024_poster.pdf",
+      icon: <RiNewspaperFill />,
+      iconColor: "primary",
+    },
+    {
+      date: "2024.09",
+      title: "第17回 全国高等学校情報教育研究会全国大会 ポスター",
+      titleHref: "/research/zenkojoken2024_poster.pdf",
+      icon: <RiNewspaperFill />,
+      iconColor: "primary",
+    },
+  ];
+
   return (
     <div>
       <Heading label="卒業研究" />
@@ -118,6 +149,10 @@ const BachelorResearch = () => {
         <div>
           <Heading label="学会等" h2 />
           <MyTimeline timelineItems={conferenceTimelineItems} flexValue={0.35} />
+        </div>
+        <div>
+          <Heading label="プレゼンテーション・ポスター等" h2/>
+          <MyTimeline timelineItems={presentationAndPosterTimelineItems} flexValue={0.4} />
         </div>
       </div>
     </div>
