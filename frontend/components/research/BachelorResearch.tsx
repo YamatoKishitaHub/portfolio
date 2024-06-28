@@ -152,7 +152,7 @@ const BachelorResearch = () => {
         </div>
         <div>
           <Heading label="プレゼンテーション・ポスター等" h2/>
-          <MyTimeline timelineItems={presentationAndPosterTimelineItems} flexValue={0.4} />
+          <MyTimeline timelineItems={presentationAndPosterTimelineItems} flexValue={0.35} />
         </div>
       </div>
     </div>
