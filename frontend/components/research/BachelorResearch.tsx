@@ -60,14 +60,14 @@ const BachelorResearch = () => {
   const presentationAndPosterTimelineItems: TimelineItemType[] = [
     {
       date: "2023.09",
-      title: "2023年度情報処理学会関西支部支部大会 プレゼンターション資料",
+      title: "2023年度情報処理学会関西支部支部大会 プレゼンテーションスライド",
       titleHref: "/research/ipsj_kansaishibu2023_presentation.pdf",
       icon: <RiPresentationFill />,
       iconColor: "primary",
     },
     {
       date: "2024.03",
-      title: "第16回データ工学と情報マネジメントに関するフォーラム DEIM2024 プレゼンターション資料",
+      title: "第16回データ工学と情報マネジメントに関するフォーラム DEIM2024 プレゼンテーションスライド",
       titleHref: "/research/deim2024_presentation.pdf",
       icon: <RiPresentationFill />,
       iconColor: "primary",
@@ -149,7 +149,7 @@ const BachelorResearch = () => {
           <MyTimeline timelineItems={conferenceTimelineItems} flexValue={0.35} />
         </div>
         <div>
-          <Heading label="プレゼンテーションスライド・ポスター" h2/>
+          <Heading label="プレゼンテーションスライド・ポスター等" h2/>
           <MyTimeline timelineItems={presentationAndPosterTimelineItems} flexValue={0.35} />
         </div>
       </div>
