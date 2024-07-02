@@ -22,21 +22,19 @@ const BachelorResearch = () => {
     {
       date: "2024.03",
       title: "DIEM 2024 第16回 データ工学と情報マネジメントに関するフォーラム",
-      textHref: "",
       icon: <RiPresentationFill />,
       iconColor: "primary",
     },
     {
       date: "2024.08",
       title: "第17回 全国高等学校情報教育研究会全国大会",
-      text: "参加予定",
       icon: <RiPresentationFill />,
       iconColor: "primary",
     },
     {
       date: "2024.09",
-      title: "The 27th International Conference on Network-Based Information Systems (NBiS-2024)",
-      text: "参加予定",
+      title: "The 13th International Workshop on Web Services and Social Media (WSSM-2024)",
+      text: "In conjunction with The 27th International Conference on Network-Based Information Systems (NBiS-2024)",
       icon: <RiPresentationFill />,
       iconColor: "primary",
     },
@@ -64,28 +62,28 @@ const BachelorResearch = () => {
       date: "2023.09",
       title: "2023年度情報処理学会関西支部支部大会 プレゼンターション資料",
       titleHref: "/research/ipsj_kansaishibu2023_presentation.pdf",
-      icon: <RiNewspaperFill />,
+      icon: <RiPresentationFill />,
       iconColor: "primary",
     },
     {
       date: "2024.03",
       title: "第16回データ工学と情報マネジメントに関するフォーラム DEIM2024 プレゼンターション資料",
       titleHref: "/research/deim2024_presentation.pdf",
-      icon: <RiNewspaperFill />,
+      icon: <RiPresentationFill />,
       iconColor: "primary",
     },
     {
       date: "2024.03",
       title: "第16回データ工学と情報マネジメントに関するフォーラム DEIM2024 ポスター",
       titleHref: "/research/deim2024_poster.pdf",
-      icon: <RiNewspaperFill />,
+      icon: <RiPresentationFill />,
       iconColor: "primary",
     },
     {
-      date: "2024.09",
+      date: "2024.08",
       title: "第17回 全国高等学校情報教育研究会全国大会 ポスター",
       titleHref: "/research/zenkojoken2024_poster.pdf",
-      icon: <RiNewspaperFill />,
+      icon: <RiPresentationFill />,
       iconColor: "primary",
     },
   ];
@@ -151,7 +149,7 @@ const BachelorResearch = () => {
           <MyTimeline timelineItems={conferenceTimelineItems} flexValue={0.35} />
         </div>
         <div>
-          <Heading label="プレゼンテーション・ポスター等" h2/>
+          <Heading label="プレゼンテーションスライド・ポスター" h2/>
           <MyTimeline timelineItems={presentationAndPosterTimelineItems} flexValue={0.35} />
         </div>
       </div>
