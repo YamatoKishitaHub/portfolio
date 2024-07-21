@@ -32,6 +32,7 @@ const SchoolTimeline = () => {
     {
       date: "2024.07",
       title: "2024年度 学業成績優秀者表彰 最優秀賞受賞",
+      titleHref: "https://www.aoyama.ac.jp/wp-content/uploads/2024/07/prize_gakugyou_-seiseki2024.pdf",
       icon: <FaTrophy />,
       iconColor: "grey",
     },
