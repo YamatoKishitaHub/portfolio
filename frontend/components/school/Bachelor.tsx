@@ -11,6 +11,7 @@ import { SimpleTreeView } from "@mui/x-tree-view/SimpleTreeView";
 import { TreeItem } from "@mui/x-tree-view/TreeItem";
 import { FaShop } from "react-icons/fa6";
 import { FaTrophy } from "react-icons/fa";
+import { FaSchool } from "react-icons/fa";
 
 import Heading from "../ui/Heading";
 import MyTimeline from "../ui/MyTimeline";
@@ -174,7 +175,7 @@ const Bachelor = () => {
       title: "幅広い学びから見つけた打ち込める専門分野。成長の実感は未来の自分への期待に",
       text: "大学のニュースサイトに掲載していただいた記事",
       titleHref: "https://life.a01.aoyama.ac.jp/interview/1690",
-      icon: <FaTrophy />,
+      icon: <FaSchool />,
       iconColor: "primary",
     },
   ];
