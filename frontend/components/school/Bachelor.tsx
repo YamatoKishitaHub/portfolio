@@ -152,7 +152,7 @@ const Bachelor = () => {
     );
   };
 
-  const timelineItems: TimelineItemType[] = [
+  const articlesTimelineItems: TimelineItemType[] = [
     {
       date: "2023.01",
       title: "相模原キャンパス　購買会　チャレンジショップで利益向上へ",
@@ -166,6 +166,14 @@ const Bachelor = () => {
       title: "【社会情報学部】角颯真さん、木下倭さん（ともに社会情報学部3年、伊藤一成教授研究室所属）が「情報処理学会関西支部 2023年度支部大会」にて受賞",
       text: "情報処理学会関西支部 支部大会にて奨励賞を受賞した際の記事",
       titleHref: "https://www.aoyama.ac.jp/faculty117/2023/news_20240212_01",
+      icon: <FaTrophy />,
+      iconColor: "primary",
+    },
+    {
+      date: "2024.07",
+      title: "幅広い学びから見つけた打ち込める専門分野。成長の実感は未来の自分への期待に",
+      text: "大学のニュースサイトに掲載していただいた記事",
+      titleHref: "https://life.a01.aoyama.ac.jp/interview/1690",
       icon: <FaTrophy />,
       iconColor: "primary",
     },
@@ -221,7 +229,7 @@ const Bachelor = () => {
         </Box>
         <div>
           <Heading label="取材記事" h2 />
-          <MyTimeline timelineItems={timelineItems} flexValue={0.1} />
+          <MyTimeline timelineItems={articlesTimelineItems} flexValue={0.1} />
         </div>
       </div>
     </div>

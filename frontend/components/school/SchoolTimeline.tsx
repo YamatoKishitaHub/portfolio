@@ -7,7 +7,7 @@ import MyTimeline from "../ui/MyTimeline";
 import { TimelineItemType } from "@/types/timeline";
 
 const SchoolTimeline = () => {
-  const timelineItems: TimelineItemType[] = [
+  const shoolTimelineItems: TimelineItemType[] = [
     {
       date: "2021.04",
       title: "青山学院大学 社会情報学部 社会情報学科 入学",
@@ -62,7 +62,7 @@ const SchoolTimeline = () => {
   return (
     <div>
       <Heading label="年表" />
-      <MyTimeline timelineItems={timelineItems} flexValue={0.6} />
+      <MyTimeline timelineItems={shoolTimelineItems} flexValue={0.6} />
     </div>
   );
 };
