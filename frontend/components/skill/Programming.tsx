@@ -532,6 +532,53 @@ const Programming = () => {
       ],
       open: false,
     },
+    {
+      label: "掲示板サイト",
+      text: "Node.js (Express)でTypeScriptを使用する練習、FirebaseとSocket.IOの復習のために作成した掲示板サイトです。",
+      date: "2024年7月",
+      image: "/skill/bbs.png",
+      url: "https://bulletin-board-system-site.vercel.app/",
+      github: "https://github.com/YamatoKishitaHub/bbs",
+      skills: [
+        {
+          label: "Next.js",
+          icon: skillIcons.NextJS,
+        },
+        {
+          label: "TypeScript",
+          icon: skillIcons.TypeScript,
+        },
+        {
+          label: "Node.js",
+          icon: skillIcons.NodeJS,
+        },
+        {
+          label: "Express",
+          icon: skillIcons.Express,
+        },
+        {
+          label: "Tailwind CSS",
+          icon: skillIcons.TailwindCSS,
+        },
+        {
+          label: "Firebase",
+          icon: skillIcons.Firebase,
+        },
+        {
+          label: "Socket.IO",
+          icon: skillIcons.SocketIO,
+        },
+        {
+          label: "Vercel",
+          icon: skillIcons.Vercel,
+        },
+        {
+          label: "Render",
+          icon: skillIcons.Render,
+        },
+      ],
+      open: false,
+    },
   ]);
 
   const handleModal = (index: number) => {
