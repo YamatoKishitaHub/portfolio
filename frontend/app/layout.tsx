@@ -12,6 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "木下倭のポートフォリオ",
   description: "木下倭のポートフォリオです。",
+  robots: {
+    index: false,
+  },
 };
 
 export default function RootLayout({
