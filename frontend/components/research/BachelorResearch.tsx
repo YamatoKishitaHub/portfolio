@@ -55,6 +55,13 @@ const BachelorResearch = () => {
       icon: <RiNewspaperFill />,
       iconColor: "primary",
     },
+    {
+      date: "2024.03",
+      title: "Yamato Kishita, Mikihiro Ishii, Kazunari Ito: A Proposal of Application for Learning about Document Structuring and Styling through Pictogram Content Creation. The 13th International Workshop on Web Services and Social Media (WSSM-2024). (2024.09)",
+      titleHref: "",
+      icon: <RiNewspaperFill />,
+      iconColor: "primary",
+    },
   ];
 
   const presentationAndPosterTimelineItems: TimelineItemType[] = [
