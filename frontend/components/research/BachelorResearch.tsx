@@ -50,7 +50,7 @@ const BachelorResearch = () => {
     },
     {
       date: "2024.03",
-      title: "木下 倭，高橋伶奈，伊藤一成：ピクタグラミング −ピクトグラムの作成を通じたマークアップ言語学習アプリケーションの開発とその評価−，第16回データ工学と情報マネジメントに関するフォーラム（DEIM2024），(2024.03)",
+      title: "木下 倭，高橋伶奈，伊藤一成：ピクタグラミング −ピクトグラムの作成を通じたマークアップ言語・スタイルシート言語学習アプリケーションの開発とその評価−，第16回データ工学と情報マネジメントに関するフォーラム（DEIM2024），(2024.03)",
       titleHref: "https://confit.atlas.jp/guide/event-img/deim2024/T5-A-3-02/public/pdf?type=in",
       icon: <RiNewspaperFill />,
       iconColor: "primary",
