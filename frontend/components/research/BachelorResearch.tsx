@@ -58,7 +58,7 @@ const BachelorResearch = () => {
     {
       date: "2024.03",
       title: "Yamato Kishita, Mikihiro Ishii, Kazunari Ito: A Proposal of Application for Learning about Document Structuring and Styling through Pictogram Content Creation. The 13th International Workshop on Web Services and Social Media (WSSM-2024). (2024.09)",
-      titleHref: "",
+      titleHref: "https://link.springer.com/chapter/10.1007/978-3-031-72325-4_45",
       icon: <RiNewspaperFill />,
       iconColor: "primary",
     },
@@ -90,6 +90,13 @@ const BachelorResearch = () => {
       date: "2024.08",
       title: "第17回全国高等学校情報教育研究会全国大会（愛知大会） ポスター",
       titleHref: "/research/zenkojoken2024_poster.pdf",
+      icon: <RiPresentationFill />,
+      iconColor: "primary",
+    },
+    {
+      date: "2024.09",
+      title: "The 13th International Workshop on Web Services and Social Media (WSSM-2024) プレゼンテーションスライド",
+      titleHref: "/research/wssm2024_presentation.pdf",
       icon: <RiPresentationFill />,
       iconColor: "primary",
     },
