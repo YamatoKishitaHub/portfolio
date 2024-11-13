@@ -41,3 +41,7 @@ backend/node_modules/
 backend/.env*.local
 
 .env*.local
+
+# Ignore all environment files
+*.env
+.env*
